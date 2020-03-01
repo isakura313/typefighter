@@ -1,0 +1,12 @@
+button:active, button:focus {
+    outline: none !important;
+    /* color: red !important; */
+    /* border:none;     */
+  }
+  button::-moz-focus-inner {
+    border: 0 !important;
+  }
+  :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}

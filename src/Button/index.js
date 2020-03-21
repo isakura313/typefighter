@@ -19,7 +19,7 @@ import './index.css';
         return (
             <button
             ref={this.button}
-            key={symbol.key} className="button" onKeyPress={
+            key={symbol.key} className="button is-rounded is-light" onKeyPress={
                 this.props.handleKeyPress }> {symbol.text}</button>
         )
     }
@@ -27,8 +27,8 @@ import './index.css';
         const symbolEntries = this.props.entries
         const listButtons = symbolEntries.map(this.createSymbols)
         return  (
-            <div className="columns is-centered" >
-            <div className="column is-half"> {listButtons} </div>
+        <div className="hero-body is-half is-centered">
+            <div className="buttons are-medium is-half is-centered "> {listButtons} </div>
         </div>
         )
        
